@@ -11,4 +11,5 @@ docker run -d \
     -e POSTGRES_PASSWORD=P@ssw0rd \
     -e PGDATA=/var/lib/postgresql/data/pgdata \
     -v /custom/mount:/var/lib/postgresql/data \
+    -p 5432:5432 \
     postgres
