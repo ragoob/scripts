@@ -7,7 +7,7 @@ apt-cache policy docker-ce
 apt install docker-ce -y
 docker run -d \
     --name my-postgres \
-    --restart unless-stopped
+    --restart unless-stopped \
     -e POSTGRES_PASSWORD=P@ssw0rd \
     -e PGDATA=/var/lib/postgresql/data/pgdata \
     -v /custom/mount:/var/lib/postgresql/data \
